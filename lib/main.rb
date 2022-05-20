@@ -1,20 +1,23 @@
 require "json"
 
-def helloworld
-  p "hello world"
-end
-
 def parse_json(file)
   data = JSON.parse(File.read(file))
   string = data["checks"][0]["id"]
-  
-  p string
 end
 
 def generate_array(file)
   data = JSON.parse(File.read(file))
- 
   checks = data["checks"]
-  checks.each { |check| puts check["id"] }
+end
 
+def name_id(file,id)
+  array = generate_array(file)
+  hash = array.find { |n| n["id"] == id }
+  hash["name"]
+end
+
+def describe_id(file,id)
+  array = generate_array(file)
+  hash = array.find { |n| n["id"] == id }
+  hash["description"]
 end
