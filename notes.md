@@ -129,7 +129,17 @@ The variables `title` and `body` will be populated by `name` and `description` f
 
 The `REPO` variable will be cloud-operations for now. This can be further developed in future. 
 
-This means our command will be 
+This means our command should be: 
+
+```
+curl \
+  -X POST \
+  -H "Accept: application/vnd.github.v3+json" \
+  https://api.github.com/repos/minstryofjustice/cloud-operations/issues \
+  -d '{"title":"Found a bug","body":"I'm having a problem with this.","assignees":["octocat"],"milestone":1,"labels":["bug"]}'
+```
+
+If we 
 
 ## Tying it all Together
 
@@ -138,6 +148,15 @@ This means our command will be
 
 ## Future Features ✨
 - Post to different repositories
+- Potential to use a GitHub App to create the Issues
 
 ## Issues
-- Some account may need to be created to post the issue in github 
+- Some account may need to be created to post the issue in github
+
+## Resources
+
+Note the deprecation warning at the start of this page:
+[GitHub Auth](https://docs.github.com/en/rest/guides/basics-of-authentication)
+[Sinatra](https://github.com/sinatra/sinatra-book/blob/master/book/Introduction.markdown#hello-world-application)
+
+We should therefore use [this](https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens) method. 
