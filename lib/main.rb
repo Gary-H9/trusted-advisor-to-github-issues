@@ -7,8 +7,6 @@ end
 def parse_json(file)
   data = JSON.parse(File.read(file))
   string = data["checks"][0]["id"]
-  
-  p string
 end
 
 def generate_array(file)
@@ -16,5 +14,5 @@ def generate_array(file)
  
   checks = data["checks"]
   checks.each { |check| puts check["id"] }
-
 end
+
