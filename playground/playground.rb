@@ -26,7 +26,7 @@ end
 #client = Octokit::Client.new(:login => 'defunkt', :password => 'c0d3b4ssssss!')
 
 # Set access_token instead of login and password if you use personal access token
-client = Octokit::Client.new(:access_token => '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')
+client = Octokit::Client.new(:access_token => '')
 
 # Fetch the current user
 client.user
