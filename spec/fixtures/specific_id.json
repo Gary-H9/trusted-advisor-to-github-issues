@@ -1,0 +1,51 @@
+{
+    "result": {
+        "checkId": "Qch7DwouX1",
+        "timestamp": "2022-05-19T06:45:35Z",
+        "status": "warning",
+        "resourcesSummary": {
+            "resourcesProcessed": 1,
+            "resourcesFlagged": 1,
+            "resourcesIgnored": 0,
+            "resourcesSuppressed": 0
+        },
+        "categorySpecificSummary": {
+            "costOptimizing": {
+                "estimatedMonthlySavings": 9.504000000000001,
+                "estimatedPercentMonthlySavings": 1.0000000000000002
+            }
+        },
+        "flaggedResources": [
+            {
+                "status": "warning",
+                "region": "eu-west-2",
+                "resourceId": "xaJMo4Hj-M0Xv0YzWGomi5dWP2v3o8ujM2LxVTxJA8Y",
+                "isSuppressed": false,
+                "metadata": [
+                    "eu-west-2c",
+                    "i-0c2f172a2e4ac1631",
+                    "Heartbeat instance",
+                    "t2.micro",
+                    "$9.50",
+                    "1.3%  0.06MB",
+                    "1.4%  0.12MB",
+                    "1.4%  0.07MB",
+                    "1.3%  0.06MB",
+                    "1.3%  0.06MB",
+                    "1.3%  0.06MB",
+                    "1.3%  0.06MB",
+                    "1.3%  0.06MB",
+                    "1.3%  0.06MB",
+                    "1.4%  0.07MB",
+                    "1.3%  0.07MB",
+                    "1.3%  0.06MB",
+                    "1.3%  0.05MB",
+                    "1.3%  0.06MB",
+                    "1.3%",
+                    "0.06MB",
+                    "14 days"
+                ]
+            }
+        ]
+    }
+}
